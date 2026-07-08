@@ -1,89 +1,412 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.15.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.15.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.15.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guazabi - Sushi & Street Food Take Away</title>
+  <meta name="description" content="Guazabi es un Sushi & Street Food Take Away en Sanlúcar de Barrameda. Elaboraciones artesanales fusionando la gastronomía asiática con ingredientes propios de la tierra.">
+  <link rel="icon" type="image/png" href="img/guazabi-pictograma.png">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  
+  <header>
+    <div class="container">
+      <a href="#" class="logo-container">
+        <img src="img/guazabi-pictograma.png" alt="Guazabi Pictograma" class="logo-icon">
+        <span class="logo-text">Guazabi</span>
+      </a>
+      
+      <nav>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#carta">Carta</a></li>
+          <li><a href="#opiniones">Opiniones</a></li>
+        </ul>
+      </nav>
+      
+      <button class="hamburger" aria-label="Menú">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </header>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#carta">Carta</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+    </ul>
+  </div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+  <main>
+    <section id="hero">
+      <div class="container hero-content">
+        <img src="img/guazabi-logotipo.png" alt="Guazabi Logotipo" class="hero-logo-big slide-up">
+        <h1 class="hero-title slide-up" style="display: none;">Guazabi</h1>
+        <p class="hero-subtitle slide-up" style="animation-delay: 0.2s;">Sushi & Street Food Take Away</p>
+        
+        <div class="btn-group slide-up" style="animation-delay: 0.4s;">
+          <a href="https://m.oidokocina.com/comida-domicilio/sanlucar-barrameda/guazabi" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <img src="img/oidokocina.png" alt="OídoKocina"> Pedir en OídoKocina
+          </a>
+          <a href="https://glovo.go.link/open?link_type=store&store_id=570792&adjust_t=s321jkn" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <img src="img/glovo.png" alt="Glovo"> Pedir en Glovo
+          </a>
+          <a href="tel:+34614890513" class="btn btn-outline">
+            Llamar al 614 89 05 13
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <div class="container">
+        <div class="section-header slide-up">
+          <h2>Sobre Guazabi</h2>
+        </div>
+        
+        <div class="text-content-box fade-in">
+          <p><strong>Guazabi</strong> es un Sushi & Street Food Take Away creado por Manu Pérez y Daniel Climent. Ubicado en Sanlúcar de Barrameda, Cádiz, sus elaboraciones son completamente artesanales, fusionando la gastronomía asiática con ingredientes propios de la tierra.</p>
+          <p>Se centra en la comida callejera japonesa con algo más de elaboración. Tienen un apartado de bocadillos pequeños, otro de dumplings, y sushi.</p>
+        </div>
+        
+        <div class="image-grid">
+          <img src="img/IMG_5744.jpg" alt="Elaboración Guazabi" class="fade-in">
+          <img src="img/IMG_5745.jpg" alt="Sushi Guazabi" class="fade-in" style="transition-delay: 0.2s;">
+          <img src="img/IMG_5746.jpg" alt="Plato Guazabi" class="fade-in" style="transition-delay: 0.4s;">
+        </div>
+      </div>
+    </section>
+
+    <section id="elaboraciones" style="background-color: var(--pearl-beige);">
+      <div class="container">
+        <div class="section-header slide-up">
+          <h2>Elaboraciones y Calidad</h2>
+        </div>
+        <div class="text-content-box fade-in">
+           <p>En Guazabi trabajamos con <strong>Atún Rojo Salvaje de Almadraba de Petaca Chico</strong>. El pan de nuestros bocadillos está elaborado por el <strong>Obrador Rico Paladar</strong> y nosotros elaboramos nuestras propias salsas y postres caseros.</p>
+           <p>Todos nuestros pescados son frescos y se congelan previamente durante un mínimo de 48 horas para garantizar la máxima seguridad alimentaria.</p>
+        </div>
+        <div class="btn-group slide-up" style="margin-top: 2rem;">
+          <a href="https://m.oidokocina.com/comida-domicilio/sanlucar-barrameda/guazabi" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            ¡Haz tu pedido ahora!
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="carta">
+      <div class="container">
+        <div class="section-header slide-up">
+          <h2>Nuestra Carta</h2>
+          <p style="margin-top: 1rem; color: var(--porcelain); text-align: center;">Descarga nuestra carta completa o explora nuestras categorías a continuación.</p>
+          <a href="content/guazabi-menu.pdf" download class="btn btn-secondary" style="margin-top: 1rem;">Descargar Carta (PDF)</a>
+        </div>
+
+        <!-- Poke Bowl -->
+        <div class="menu-category slide-up">
+          <div class="menu-category-header">
+            <img src="img/poke-bowl.png" alt="Poke Bowl" class="category-icon">
+            <h3>Poke Bowl</h3>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-title">Eby Nikkei</span>
+                <span class="menu-item-price">11 €</span>
+              </div>
+              <p class="menu-item-desc">Langostino, cebolla encurtida, aguacate, mango, mini mazorca, maíz choclo, espárrago ahumado, salsa peruana ají-mango</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-title">Salmón Sésamo</span>
+                <span class="menu-item-price">11 €</span>
+              </div>
+              <p class="menu-item-desc">Salmón, pepino encurtido, aguacate, edamame, wakame, manzana, mango, fresa, salsa sésamo</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-title">Classic</span>
+                <span class="menu-item-price">12,50 €</span>
+              </div>
+              <p class="menu-item-desc">Atún rojo, langostino, aguacate, edamame, wakame, cebolla encurtida, mango, fresa, mayo kimchi</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-title">Tuna Flamed</span>
+                <span class="menu-item-price">12,50 €</span>
+              </div>
+              <p class="menu-item-desc">Tarantelo flameado, aguacate, zanahoria, maíz choclo, pepino encurtido, shiitake, espárrago ahumado, mayo japo teriyaki</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Street Food -->
+        <div class="menu-category slide-up">
+          <div class="menu-category-header">
+            <img src="img/street-food.png" alt="Street Food" class="category-icon">
+            <h3>Street Food</h3>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Papas asadas Tokio Style</span><span class="menu-item-price">4 €</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Rollitos de atún crujiente</span><span class="menu-item-price">8 €</span></div>
+              <p class="menu-item-desc">Con salsa de mole verde y maracuyá</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Hot Dog de gambón</span><span class="menu-item-price">9 €</span></div>
+              <p class="menu-item-desc">Ensalada agridulce y mayo de chipotles adobados</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Bocatín de atún rojo guisado</span><span class="menu-item-price">9 €</span></div>
+              <p class="menu-item-desc">Al curry japonés, lima marroquí y queso payoyo</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Sando de pollo crujiente</span><span class="menu-item-price">9,50 €</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Burguer Bao de carrilleras de vaca</span><span class="menu-item-price">10 €</span></div>
+              <p class="menu-item-desc">Queso ahumado y salsa secreta</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Pan chino de costilla de cerdo</span><span class="menu-item-price">10 €</span></div>
+              <p class="menu-item-desc">En salsa hoisin y naranja</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Lasaña de atún de Almadraba</span><span class="menu-item-price">15 €</span></div>
+              <p class="menu-item-desc">Bechamel de coco y queso de cabra payoya</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sushi -->
+        <div class="menu-category slide-up">
+          <div class="menu-category-header">
+            <img src="img/sushi.png" alt="Sushi" class="category-icon">
+            <h3>Sushi (12 piezas)</h3>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Mix Makis</span><span class="menu-item-price">15,50 €</span></div>
+              <p class="menu-item-desc">4 salmón, 4 atún, 4 langostinos</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Mix Uramakis</span><span class="menu-item-price">16 €</span></div>
+              <p class="menu-item-desc">4 salmón, 4 atún, 4 langostinos</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Mix Variado</span><span class="menu-item-price">16 €</span></div>
+              <p class="menu-item-desc">4 nigiris, 4 uramakis, 4 makis</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Mix Salmón</span><span class="menu-item-price">18 €</span></div>
+              <p class="menu-item-desc">4 nigiris, 4 makis, 4 uramakis de salmón</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Mix Langostinos</span><span class="menu-item-price">20 €</span></div>
+              <p class="menu-item-desc">4 nigiris, 4 makis, 4 uramakis de langostinos</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Mix Almadraba</span><span class="menu-item-price">24 €</span></div>
+              <p class="menu-item-desc">4 nigiris, 4 makis, 4 uramakis de atún rojo de Almadraba</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Nigiris -->
+        <div class="menu-category slide-up">
+          <div class="menu-category-header">
+            <img src="img/nigiris.png" alt="Nigiris" class="category-icon">
+            <h3>Nigiris (4 piezas)</h3>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Salmón</span><span class="menu-item-price">8 €</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Salmón flameado teriyaki</span><span class="menu-item-price">9 €</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Langostinos</span><span class="menu-item-price">10 €</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Lubina y ponzu</span><span class="menu-item-price">10 €</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Atún rojo de Almadraba</span><span class="menu-item-price">12 €</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Tarantelo de atún flameado</span><span class="menu-item-price">12,50 €</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Nigiris variados 12 piezas</span><span class="menu-item-price">28 €</span></div>
+              <p class="menu-item-desc">Atún rojo, salmón, langostinos, lubina, atún flameado y salmón flameado</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Special Roll -->
+        <div class="menu-category slide-up">
+          <div class="menu-category-header">
+            <img src="img/special-roll.png" alt="Special Roll" class="category-icon">
+            <h3>Special Roll (8 piezas)</h3>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Langostino Roll</span><span class="menu-item-price">12 €</span></div>
+              <p class="menu-item-desc">Relleno: espárrago ahumado y mango. Cobertura: langostino. Salsa: Ají-mango.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Salmón Teriyaki</span><span class="menu-item-price">12 €</span></div>
+              <p class="menu-item-desc">Relleno: aguacate, queso crema cítrico y fresa. Cobertura: salmón flameado. Salsa: teriyaki casera.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Guazabi Roll</span><span class="menu-item-price">14 €</span></div>
+              <p class="menu-item-desc">Relleno: langostino y aguacate. Cobertura: atún y camarones. Salsa: acevichada.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Tarantelo Flamed</span><span class="menu-item-price">14 €</span></div>
+              <p class="menu-item-desc">Relleno: shiitake, espárrago y zanahoria. Cobertura: tarantelo de atún flameado. Salsa: curry japonés.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Tartar Tuna</span><span class="menu-item-price">15 €</span></div>
+              <p class="menu-item-desc">Relleno: aguacate y mango. Cobertura: tartar de atún. Salsa: nikkei.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Crab Roll</span><span class="menu-item-price">15 €</span></div>
+              <p class="menu-item-desc">Relleno: cangrejo desmigado y aguacate. Cobertura: tobiko y langostino. Salsa: chipotle ahumado.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dumpling -->
+        <div class="menu-category slide-up">
+          <div class="menu-category-header">
+            <img src="img/dumpling.png" alt="Dumpling" class="category-icon">
+            <h3>Dumpling (4 piezas)</h3>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Hakao de marisco</span><span class="menu-item-price">6,50 €</span></div>
+              <p class="menu-item-desc">Con chili dulce</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Gyozas de verduras</span><span class="menu-item-price">7 €</span></div>
+              <p class="menu-item-desc">Con mayo japo y teriyaki</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Gyozas de langostinos y pollo</span><span class="menu-item-price">7 €</span></div>
+              <p class="menu-item-desc">Con salsa acevichá</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Siu Mai picante de cerdo ibérico</span><span class="menu-item-price">7,50 €</span></div>
+              <p class="menu-item-desc">Con kimchi</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Postres -->
+        <div class="menu-category slide-up">
+          <div class="menu-category-header">
+            <img src="img/postres-caseros.png" alt="Postres Caseros" class="category-icon">
+            <h3>Postres Caseros</h3>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Tarta de queso</span><span class="menu-item-price">6,50 €</span></div>
+              <p class="menu-item-desc">Con crema de chocolate blanco y té matcha</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Tartaleta Yuzu</span><span class="menu-item-price">6,50 €</span></div>
+              <p class="menu-item-desc">Merengue y lotus</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">3 chocolates</span><span class="menu-item-price">6,50 €</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header"><span class="menu-item-title">Brownie-cookie</span><span class="menu-item-price">5 €</span></div>
+              <p class="menu-item-desc">Toffe y palomitas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-note slide-up">
+          Si eres vegano o vegetariano podemos adaptar platos para ti.
+        </div>
+
+      </div>
+    </section>
+
+    <section id="opiniones">
+      <div class="container">
+        <div class="section-header slide-up">
+          <h2>Opiniones</h2>
+          <p style="font-weight: 700; color: var(--yale-blue); margin-top: 0.5rem; font-size: 1.2rem;">4,7 <span style="color: #FFD700;">★★★★★</span> en Google Business</p>
+        </div>
+        
+        <div class="reviews-container fade-in">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-name">María Rodríguez</div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <div class="review-text">"Espectacular. El sushi está buenísimo y los ingredientes se notan de primerísima calidad. El trato inmejorable, ¡volveremos a pedir seguro!"</div>
+          </div>
+          
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-name">Carlos Jiménez</div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <div class="review-text">"La fusión de sabores es increíble. El bocatín de atún rojo guisado al curry japonés nos dejó sin palabras. Un acierto total en Sanlúcar."</div>
+          </div>
+          
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-name">Laura F.</div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <div class="review-text">"El mejor take away que hemos probado en la zona. Las gyozas son caseras y se nota, y el postre de Yuzu... ¡una maravilla para rematar la cena!"</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col fade-in">
+          <h3>Guazabi</h3>
+          <p>Sushi & Street Food Take Away</p>
+          <p>Elaboraciones completamente artesanales.</p>
+        </div>
+        <div class="footer-col fade-in" style="transition-delay: 0.2s;">
+          <h3>Ubicación y Contacto</h3>
+          <p>Calle Bolsa, 18</p>
+          <p>11540 Sanlúcar de Barrameda, Cádiz</p>
+          <p>Tel: <a href="tel:+34614890513">614 89 05 13</a></p>
+        </div>
+        <div class="footer-col fade-in" style="transition-delay: 0.4s;">
+          <h3>Horario</h3>
+          <p>Lun - Mar, Jue - Dom: <br>13:00 - 15:30 | 20:00 - 23:30</p>
+          <p>Miércoles: Cerrado</p>
+          <div style="margin-top: 1rem;">
+            <a href="https://www.instagram.com/guazabi_/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color: var(--pearl-beige); color: var(--pearl-beige);">Síguenos en Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom fade-in">
+        <p>&copy; 2026 Guazabi. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
