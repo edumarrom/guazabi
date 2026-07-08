@@ -37,16 +37,16 @@
   --pearl-beige: #e5d9b4;
   --porcelain: #fbfbf8;
   --pitch-black: #0d0d07;
-  
+
   --font-main: 'Lato', sans-serif;
   --font-logo: 'Electroharmonix', cursive;
-  
+
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
   --spacing-xl: 6rem;
-  
+
   --border-radius: 8px;
   --transition: all 0.3s ease;
 }
@@ -223,6 +223,12 @@ header .container {
   font-family: var(--font-logo);
   font-size: 2rem;
   color: var(--yale-blue);
+  line-height: 1;
+  padding-top: 5px;
+}
+
+.logo-footer {
+  font-family: var(--font-logo);
   line-height: 1;
   padding-top: 5px;
 }
@@ -412,9 +418,13 @@ nav a {
 }
 
 .category-icon {
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
+}
+
+.flip-horizontal{
+  transform: scaleX(-1);
 }
 
 .menu-items {
@@ -586,20 +596,20 @@ footer h3 {
 @media (min-width: 768px) {
   h1 { font-size: 3.5rem; }
   h2 { font-size: 2.5rem; }
-  
+
   .btn-group {
     flex-direction: row;
     justify-content: center;
   }
-  
+
   .image-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .menu-items {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .footer-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -609,23 +619,23 @@ footer h3 {
   header {
     padding: 1.5rem 0;
   }
-  
+
   .hamburger {
     display: none;
   }
-  
+
   nav ul {
     display: flex;
   }
-  
+
   .mobile-menu {
     display: none;
   }
-  
+
   .image-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .reviews-container {
     justify-content: center;
   }
