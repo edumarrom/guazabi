@@ -21,6 +21,7 @@
         <ul>
           <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#carta">Carta</a></li>
+          <li><a href="#galeria">Galería</a></li>
           <li><a href="#opiniones">Opiniones</a></li>
         </ul>
       </nav>
@@ -37,6 +38,7 @@
     <ul>
       <li><a href="#nosotros">Nosotros</a></li>
       <li><a href="#carta">Carta</a></li>
+      <li><a href="#galeria">Galería</a></li>
       <li><a href="#opiniones">Opiniones</a></li>
     </ul>
   </div>
@@ -89,6 +91,10 @@
         <div class="text-content-box fade-in">
            <p>En Guazabi trabajamos con <strong>Atún Rojo Salvaje de Almadraba de <a href="https://www.petacachico.com/" target="_blank" rel="noopener">Petaca Chico</a> </strong>. El pan de nuestros bocadillos está elaborado por el <strong>Obrador <a href="https://www.instagram.com/ricopaladarobrador/" target="_blank" rel="noopener">Rico Paladar</a></strong> y nosotros <strong>elaboramos nuestras propias salsas y postres caseros</strong>.</p>
            <p>Todos <strong>nuestros pescados son frescos</strong> y se congelan previamente durante un mínimo de 48 horas para garantizar la <strong>máxima seguridad alimentaria</strong>.</p>
+        </div>
+        <div class="partners-logos fade-in">
+          <a href="https://www.petacachico.com/" target="_blank" rel="noopener"><img src="img/petaca-chico.png" alt="Petaca Chico"></a>
+          <a href="https://www.instagram.com/ricopaladarobrador/" target="_blank" rel="noopener"><img src="img/rico-paladar.png" alt="Obrador Rico Paladar"></a>
         </div>
         <div class="btn-group slide-up" style="margin-top: 2rem;">
           <a href="https://m.oidokocina.com/comida-domicilio/sanlucar-barrameda/guazabi" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
@@ -342,6 +348,58 @@
       </div>
     </section>
 
+    <section id="galeria" style="background-color: var(--pearl-beige);">
+      <div class="container">
+        <div class="section-header slide-up">
+          <h2>Echa un vistazo</h2>
+          <p style="margin-top: 1rem; color: var(--yale-blue); text-align: center;">A nuestros platos y deja que hambre haga el resto.</p>
+        </div>
+
+        <!-- Carrusel de Galería -->
+        <div class="gallery-container fade-in" id="gallery-container">
+          <figure class="gallery-item">
+            <img src="img/poke-bowl-atun-flameado.jpg" alt="Poke Bowl de atún flameado" class="gallery-img">
+            <figcaption>Nada como llegar a casa con la cena</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/poke-bowls-cerveza.jpg" alt="Dos Poke Bowl junto a un par de cervezas asiáticas" class="gallery-img">
+            <figcaption>Perfectos para disfrutrar en compañía</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/bocatin-atun.jpg" alt="Bocatín de atún guisado al curry japonés" class="gallery-img">
+            <figcaption>Auténtico atún rojo de almadraba</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/uramaki-salmon-aguacate-queso.jpg" alt="Uramaki de salmón, aguacate y queso crema" class="gallery-img">
+            <figcaption>No sabemos quién se va a deshacer antes, si este uramaki o tú al probarlo</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/special-roll-guazabi-roll.jpg" alt="Special Guazabi Roll" class="gallery-img">
+            <figcaption>Esto sí es auténtica fusión</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/gyozas-langostino-pollo.jpg" alt="Gyozas de pollo y gambas" class="gallery-img">
+            <figcaption>Perfectas para compartir... o no</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/tarta-queso-te-matcha.jpg" alt="tarta de queso con crema de chocolate blanco y té matcha" class="gallery-img">
+            <figcaption>Un postre que no te dejará indiferente</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/yuzu-pie.jpg" alt="Yuzu pie" class="gallery-img">
+            <figcaption>Una combinación de texturas y sabor cítrico irresistibles</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <section id="opiniones">
       <div class="container">
         <div class="section-header slide-up">
@@ -411,6 +469,16 @@
       </div>
     </div>
   </footer>
+
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <button class="lightbox-prev" aria-label="Anterior">&#10094;</button>
+    <div class="lightbox-wrapper">
+      <img class="lightbox-content" id="lightbox-img" alt="Imagen ampliada">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+    <button class="lightbox-next" aria-label="Siguiente">&#10095;</button>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
