@@ -189,4 +189,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
   }
+
+  // Hero Background Image Check
+  const hero = document.getElementById('hero');
+  if (hero) {
+    const img = new Image();
+    img.src = 'img/sofa.jpg';
+    img.onload = () => {
+      hero.classList.add('has-bg');
+    };
+  }
 });

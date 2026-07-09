@@ -345,6 +345,31 @@ nav a {
   z-index: 1;
 }
 
+#hero.has-bg {
+  background-image: linear-gradient(rgba(13, 13, 7, 0.7), rgba(13, 13, 7, 0.7)), url('../img/sofa.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#hero.has-bg .hero-logo-big {
+  filter: brightness(0) invert(1);
+}
+
+#hero.has-bg .hero-subtitle {
+  color: var(--pearl-beige);
+}
+
+#hero.has-bg .btn-outline {
+  border-color: var(--porcelain);
+  color: var(--porcelain);
+}
+
+#hero.has-bg .btn-outline:hover {
+  background-color: var(--porcelain);
+  color: var(--yale-blue);
+}
+
 /* --- SECTION DECORATION --- */
 .section-header {
   text-align: center;
