@@ -114,12 +114,14 @@ document.addEventListener('DOMContentLoaded', () => {
           updateLightboxContent(index);
           lightbox.classList.add('active');
           document.body.style.overflow = 'hidden'; // Prevent scrolling
+          // Push history state so back button closes the lightbox instead of leaving the page
+          window.history.pushState({ lightbox: 'open' }, '');
         });
       }
     });
 
-    // Close lightbox
-    const closeLightbox = () => {
+    // Close lightbox UI actually
+    const closeLightboxUI = () => {
       lightbox.classList.remove('active');
       document.body.style.overflow = ''; // Restore scrolling
       setTimeout(() => {
@@ -127,6 +129,23 @@ document.addEventListener('DOMContentLoaded', () => {
         lightboxCaption.textContent = '';
       }, 300); // Wait for transition to finish
     };
+
+    // Close lightbox and sync history
+    const closeLightbox = () => {
+      // If we are currently in the pushed state, going back will trigger popstate and close the UI
+      if (window.history.state && window.history.state.lightbox === 'open') {
+        window.history.back();
+      } else {
+        closeLightboxUI();
+      }
+    };
+
+    // Listen for back button / history popstate
+    window.addEventListener('popstate', (e) => {
+      if (lightbox.classList.contains('active')) {
+        closeLightboxUI();
+      }
+    });
 
     closeBtn.addEventListener('click', closeLightbox);
     nextBtn.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
