@@ -338,8 +338,22 @@ nav a {
 }
 
 .hero-logo-big {
+  width: 100%;
   max-width: 300px;
   margin: 0 auto 2rem;
+}
+
+.hero-logo-big svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-logo-big svg .cls-2 {
+  fill: #ffffff;
+  filter: drop-shadow(0 0 15px #ffffff)
+          drop-shadow(0 0 50px #7a22ff)
+          drop-shadow(0 0 50px #6c0df2);
 }
 
 .hero-title {
@@ -376,9 +390,9 @@ nav a {
   background-repeat: no-repeat;
 }
 
-#hero.has-bg .hero-logo-big {
+/* #hero.has-bg .hero-logo-big {
   filter: brightness(0) invert(1);
-}
+} */
 
 #hero.has-bg .hero-subtitle {
   color: var(--pearl-beige);
