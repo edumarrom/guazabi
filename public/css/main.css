@@ -384,7 +384,7 @@ nav a {
 }
 
 #hero.has-bg {
-  background-image: linear-gradient(rgba(13, 13, 7, 0.7), rgba(13, 13, 7, 0.7)), url('../images/sofa.jpg');
+  background-image: linear-gradient(rgba(13, 13, 7, 0.7), rgba(13, 13, 7, 0.7)), url('../images/home/local-sofa.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

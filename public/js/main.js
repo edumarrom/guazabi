@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const hero = document.getElementById('hero');
   if (hero) {
     const img = new Image();
-    img.src = 'images/sofa.jpg';
+    img.src = 'images/home/local-sofa.jpg';
     img.onload = () => {
       hero.classList.add('has-bg');
     };
