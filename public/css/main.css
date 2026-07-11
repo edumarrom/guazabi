@@ -215,8 +215,32 @@ header .container {
   gap: 0.5rem;
 }
 
+.logo-container svg {
+  width: 100%;
+  max-width: 194px;
+  max-height: 40px;
+  height: auto;
+  display: block;
+}
+
+header .logo-container svg .cls-1 {
+  fill: var(--light-blue);
+}
+
+header .logo-container svg .cls-2 {
+  fill: var(--yale-blue);
+}
+
 .logo-icon {
   height: 40px;
+}
+
+.logo-header {
+  width: 100%;
+  max-width: 194px;
+  max-height: 40px;
+  height: auto;
+  display: block;
 }
 
 .logo-text {
@@ -346,7 +370,7 @@ nav a {
 }
 
 #hero.has-bg {
-  background-image: linear-gradient(rgba(13, 13, 7, 0.7), rgba(13, 13, 7, 0.7)), url('../img/sofa.jpg');
+  background-image: linear-gradient(rgba(13, 13, 7, 0.7), rgba(13, 13, 7, 0.7)), url('../images/sofa.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -585,6 +609,19 @@ footer {
   background-color: var(--pitch-black);
   color: var(--porcelain);
   padding: var(--spacing-lg) 0 var(--spacing-md);
+}
+
+/* footer .logo-container svg {
+  width: 100%;
+  max-width: 194px;
+  max-height: 40px;
+  height: auto;
+  display: block;
+} */
+
+/* El !important es necesario aquí para machacar el estilo inline de tu etiqueta <style> interna */
+footer .logo-container svg .cls-2 {
+  fill: var(--light-blue);
 }
 
 footer h3 {

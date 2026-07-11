@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Capa_1"
+   data-name="Capa 1"
+   viewBox="0 0 6973.5604 985.54002"
+   version="1.1"
+   sodipodi:docname="guazabi-imagotipo.svg"
+   width="6973.5601"
+   height="985.54004"
+   inkscape:export-filename="guazabi-logotipo.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview11"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="true"
+     showgrid="true"
+     inkscape:zoom="0.125"
+     inkscape:cx="7004"
+     inkscape:cy="1900"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Capa_1">
+    <sodipodi:guide
+       position="8165.9612,3418.2273"
+       orientation="0,-1"
+       id="guide11"
+       inkscape:locked="false" />
+    <inkscape:grid
+       id="grid11"
+       units="px"
+       originx="-380.62"
+       originy="-399.48999"
+       spacingx="1.0000001"
+       spacingy="0.99999998"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14902"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+    <inkscape:page
+       x="0"
+       y="0"
+       width="6973.5605"
+       height="985.54004"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .cls-1 {
+        fill: #6dc3c1;
+      }
+
+      .cls-2 {
+        fill: #004264;
+      }
+    </style>
+  </defs>
+  <path
+     class="cls-2"
+     d="m 582.76002,743.48 c -341.22,-32.35 -378.69,-284.77 -378.69,-393.69 V 220.58 h 579.84 V 5.0600021 H 2.3516916e-5 V 339.76 c 0,366.97 214.309996483084,587 603.439996483084,619.57 l 183.38,3.22 V 438.89 h -204.07 v 304.58 z"
+     id="path1" />
+  <polygon
+     class="cls-2"
+     points="3027.4,571.31 3027.4,1152.56 2630.46,1152.56 2631.61,404.56 2432.16,404.56 2431.02,1363.12 3226.85,1363.12 3226.85,571.31 "
+     id="polygon1"
+     transform="translate(-1372.62,-399.49)" />
+  <path
+     class="cls-2"
+     d="M 2598.78,1.7100021 H 2388.66 L 2039.03,790.64 l 70.44,109.77 581.9,-159.11 137.5,244.24 172.85,-78.88 L 2550.55,122.14 2598.78,1.7200021 Z M 2598.49,574.26 l -292.81,79.3 151.44,-328.65 141.38,249.36 z"
+     id="path2" />
+  <polygon
+     class="cls-2"
+     points="4609.72,1335.68 5341.1,1335.68 5232.72,1141.98 4786.55,1141.98 5280.71,570.19 5185.83,399.49 4525.79,399.49 4554.47,593.18 5006.63,593.18 4516.9,1159.85 4512.42,1165.02 "
+     id="polygon5"
+     transform="translate(-1372.62,-399.49)" />
+  <path
+     class="cls-2"
+     d="M 4667.98,5.0700021 H 4457.86 L 4094.79,790.64 4165.23,900.41 4747.12,741.3 4884.62,985.54 5057.47,906.66 4606.3,122.14 4667.98,5.0800021 Z M 4654.24,574.26 l -292.81,79.3 151.44,-328.65 141.37,249.36 z"
+     id="path3" />
+  <path
+     class="cls-2"
+     d="m 5870.27,5.0700021 h -475.5 L 5394.9,425.54 c 0,171.09 -23.19,367.47 -204,367.47 h -16.81 l 101.27,174.21 6.62,-1.14 c 295.57,-50.87 293.32,-311.16 291.67,-501.22 -0.12,-13.51 -0.23,-26.65 -0.23,-39.32 V 185.69 h 118.31 v 339.87 h 235.2 v 125.13 c 0,97.85 -27.6,130.87 -109.36,130.87 h -173.16 v 189.99 h 176.02 c 197.11,0 285.01,-98.96 285.01,-320.86 V 334.13 H 5870.26 V 5.0800021 Z"
+     id="path4" />
+  <polygon
+     class="cls-2"
+     points="7688.75,585.17 7916.38,585.17 7916.38,1181.03 7688.75,1181.03 7688.75,1371.03 8346.18,1371.03 8346.18,1181.03 8096.33,1181.03 8096.33,585.17 8346.18,585.17 8346.18,404.56 7688.75,404.56 "
+     id="polygon4"
+     transform="translate(-1372.62,-399.49)" />
+</svg>

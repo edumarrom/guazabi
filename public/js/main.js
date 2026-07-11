@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const prevBtn = document.querySelector('.lightbox-prev');
   const nextBtn = document.querySelector('.lightbox-next');
   const galleryItems = document.querySelectorAll('.gallery-item');
-  
+
   let currentIndex = 0;
   const totalImages = galleryItems.length;
 
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const item = galleryItems[index];
       const img = item.querySelector('.gallery-img');
       const caption = item.querySelector('figcaption');
-      
+
       lightboxImg.src = img.src;
       if (caption) {
         lightboxCaption.textContent = caption.textContent;
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Swipe navigation (Touch Events)
     let touchStartX = 0;
     let touchEndX = 0;
-    
+
     lightbox.addEventListener('touchstart', e => {
       touchStartX = e.changedTouches[0].screenX;
     }, {passive: true});
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const hero = document.getElementById('hero');
   if (hero) {
     const img = new Image();
-    img.src = 'img/sofa.jpg';
+    img.src = 'images/sofa.jpg';
     img.onload = () => {
       hero.classList.add('has-bg');
     };
